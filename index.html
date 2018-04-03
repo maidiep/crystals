@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Crystals Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Crystals Collector</h1>
+    </div>
+    <h2>HOW TO PLAY</h2>
+    <p>You will be given a random number for each round.
+      <br> The 4 crystals will have different values. You will not know their values until you click on them.
+      <br> To win, your total must match the random number.
+      <br> If you go over, you lose.
+    </p>
+  </div>
+
+  <div class="container">
+    <h2>Random Number</h2>
+    <div class="well" id=randomNumber>44</div>
+  </div>
+
+  <div class="container">
+    <h2>Crystals</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="images/gem1.jpg" alt="Lights" style="width:100%">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="images/gem2.jpg" alt="Nature" style="width:100%">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="images/gem3.jpg" alt="Fjords" style="width:100%">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="images/gem4.jpg" alt="Lights" style="width:100%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Sum of Crystals</h2>
+    <div class="well" id="crystalSum">44</div>
+  </div>
+<br>
+<div class="container">
+  <h2>Score</h2>
+  <div class="well" id="wins">Wins: 0</div>
+  <div class="well" id="loses">Loses: 0</div>
+</div>
+</body>
+
+</html>
