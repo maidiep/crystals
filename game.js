@@ -1,18 +1,32 @@
+var wins = 0;           //wins counter
+var losses =0;          //losses counter
+
+
+//NOTE TO SELF: to test the function, remember you have to call it.
+
+//create function to reset all the random numbers
+function reset(){
+    randomNumber();
+    gem1();
+    gem2();
+    gem3();
+    gem4();
+}
+
+reset();
+console.log(reset());
 
 
 
-// $("#gem1").on("click", function(){
-//     var random = Math.floor(Math.random() * 13) + 1;
-//  $("#crystalSum").text(random);
-//  });
-
+// function to generate random number displayed to player. This is be called when the page refreshes or after a win or a loss
 function randomNumber(){
-        var randomNumber = Math.floor(Math.random() * 1000) + 1;
+        var randomNumber = Math.floor(Math.random() * 102) + 19;
         // $("randomNumber").attr("data-value", randomNumber);
         $("#randomNumber").text(randomNumber);
         console.log(randomNumber);
 };
 
+//functions to assign a random number for each gem
 function gem1(){
     var random = Math.floor(Math.random() * 13) + 1;
     $("#gem1").attr("data-value", random);
@@ -37,3 +51,7 @@ function gem4(){
     console.log("gem4" + random);
 };
 
+// //click on gems to start adding the sums of the gems
+// $(".gemContainer").on("click"), function(){
+
+// }
