@@ -6,6 +6,13 @@
 //  $("#crystalSum").text(random);
 //  });
 
+function randomNumber(){
+        var randomNumber = Math.floor(Math.random() * 1000) + 1;
+        // $("randomNumber").attr("data-value", randomNumber);
+        $("#randomNumber").text(randomNumber);
+        console.log(randomNumber);
+};
+
 function gem1(){
     var random = Math.floor(Math.random() * 13) + 1;
     $("#gem1").attr("data-value", random);
@@ -30,4 +37,3 @@ function gem4(){
     console.log("gem4" + random);
 };
 
-gem1();
