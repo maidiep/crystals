@@ -11,12 +11,9 @@ function reset(){
     gem2();
     gem3();
     gem4();
+    $("#wins").text("Wins = " + wins);
+    $("#losses").text("Losses = " + losses);
 }
-
-reset();
-console.log(reset());
-
-
 
 // function to generate random number displayed to player. This is be called when the page refreshes or after a win or a loss
 function randomNumber(){
@@ -53,5 +50,3 @@ function gem4(){
 
 // //click on gems to start adding the sums of the gems
 // $(".gemContainer").on("click"), function(){
-
-// }
